@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+figure {
+    display: block;
+}
+
+body {
+    font-family: helvetica, serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: salmon;
+    margin-top: -30px;
+}
+
+header {
+    background-color: #A6D8DB;
+    padding-bottom: 8px;
+}
+
+#title h1 + h1 {
+    text-align: right;
+    margin-top: -.7em;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-flow: colum nowrap;
+    align-items: center;
+    background-image: image;
+    background-size: cover;
+}
+
+nav {
+    position:fixed;
+    bottom: 0;
+    left 0;
+    right: 0;
+    background-color: azure;
+}
+nav ul {
+    display: flex;
+    line-height: 200%;
+    list-style-type: none;
+    padding: 0;
+    font-size: 15px;
+}
+nav ul li {
+    margin-left: 10px;
+}
+.nomargin {
+    margin-left: 2.5px;
+}
+nav a:link {
+    text-decoration: none;
+    color:aqua;
+}
+nav a:visited {
+    color:aquamarine;
+}
+nav a:hover {
+    color:beige;
+}
+nav a:active {
+    color:blue;
+}
+
+footer {
+    position: fixed;
+    bottom: 7.5%;
+    left: 0;
+    right: 0;
+    font-size: 22px;
+    padding: 10px 0 10px 0;
+    background-color: aqua;
+}
+
+footer small {
+    margin-left: 5px;
+}
+
+.conditions,
+.temp,
+.area {
+    background-color: azure;
+    margin: .2em auto;
+}
+
