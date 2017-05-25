@@ -1,63 +1,65 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
     <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-        <title>Franklin, ID | Weather </title>
-        <meta name="description" content="Weather forecast for Franklin.">
-        <meta name="viewport" content="width=device-width">
-        <link href="CSS/franklinweather.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header>
+    <title>Franklin, ID | Weather </title>
+    <meta name="description" content="Weather forecast for Franklin.">
+    <meta name="viewport" content="width=device-width">
+    <link href="CSS/franklinweather.css" rel="stylesheet" type="text/css">
+</head>
 
-            <div id="title">
-                <h1><span>&#9856;</span><span>&#9861;</span> Feeling Lucky?
-                </h1>
-                <h1 target="_top">Local Weather </h1>
-            </div>
-        </header>
+<body>
+    <header>
+
+        <div id="title">
+            <h1><span>&#9856;</span><span>&#9861;</span> Feeling Lucky?
+            </h1>
+            <h2 id="localweather" target="_top">Local Weather </h2>
+        </div>
+    </header>
+
+    <nav class="navbar">
+
+        <ul>
+            <li>Home</li>
+            <li>Franklin</li>
+            <li>Greenville</li>
+            <li>Springfield</li>
+            <li>Search</li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <section class="overview">
+            <h2 class="area">Franklin, ID</h2>
+            <nav class="temp">
+                <strong><p>90</p>
+                    <p>&#9728 90/66</p></strong>
+                  <!--  <p>Sunny</p></b> -->
+
+            </nav>
+        </section>
+
+        <section class="conditions">
+            <h2>Current Conditions</h2>
 
             <nav>
 
-                <ul>
-                    <li>Home</li>
-                    <li>Franklin</li>
-                    <li>Greenville</li>
-                    <li>Springfield</li>
-                    <li>Search</li>
-                </ul>
-            </nav>
+             <div id="wind"><p><b>Wind:</b>
+                    <b>1-5 MPH</b>
+                 <b>Southwest</b></p></div>
 
-
-
-        <main>
-
-            <section class="cur_conditions">
-                <h2>Current Conditions</h2>
-
-<nav>
-
-            <p><b>Wind:</b>
-            <b>1-5 MPH</b>
-            <b>Southwest</b></p>
-            <p><b>Precipitation</b> 0in</p>
+                <div id="precip"><p><b>Precipitation: 0in</b></p></div>
 
             </nav>
-            </section>
-
-            <section class="overview">
-                <h2>Franklin, ID</h2>
-<nav>
-            <p>90</p>
-            <p>90/66</p>
-            <p><b>Sunny</b></p>
-
-            </nav>
-            </section>
+        </section>
 
 
-            <section class="hourly">
+
+        <!--     <section class="hourly">
                 <h2>Hourly Forecast</h2>
 <nav>
 
@@ -91,11 +93,11 @@
             </ul>
             </nav>
             </section>
-        </main>
-        <footer id="footer">
-            <ul><li>Copright</li>
-                <li><a href="https://rc03.github.io" title="Go to home page"><b>Link to Home</b></a></li></ul>
-            &copy;2017 Weather Site
-        </footer>
-    </body>
+  -->
+    </main>
+    <footer>
+        <small>Copright <a href="https://rc03.github.io" title="Go to home page"><b>Link to Home</b></a>
+                &copy;2017 Weather Site</small>
+    </footer>
+</body>
 </html>

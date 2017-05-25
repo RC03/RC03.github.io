@@ -1,90 +1,120 @@
-* {
-    box-sizing: border-box;
+ {
+    box-sizing: border-box; /* changes width property
+    to total width instead of content width */
 }
+
 figure {
-    display: block;
+    display: block; /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
 }
 
 body {
-    font-family: helvetica, serif;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* remove any margin from body */
+    padding: 0; /* ditto for padding */
     background-color: salmon;
-    margin-top: -30px;
 }
 
-header {
-    background-color: #A6D8DB;
-    padding-bottom: 8px;
+ #localweather {
+    text-align:right;
+    margin-right: 10%;
+     margin-top: -6%;
 }
-
-#title h1 + h1 {
-    text-align: right;
-    margin-top: -.7em;
-    font-size: 20px;
-}
-
-main {
-    display: flex;
-    flex-flow: colum nowrap;
-    align-items: center;
-    background-image: image;
-    background-size: cover;
-}
-
-nav {
-    position:fixed;
-    bottom: 0;
-    left 0;
+#title {
+    position: fixed;
+    left: 0;
     right: 0;
-    background-color: azure;
+    background-color: #A6D8DB;
+    margin-top: -5.7%;
+    padding-bottom: 0.5em;
 }
-nav ul {
+
+.navbar   {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F07C6C;
+}
+
+.navbar ul {
     display: flex;
     line-height: 200%;
     list-style-type: none;
     padding: 0;
     font-size: 15px;
 }
-nav ul li {
+
+.navbar ul li   {
     margin-left: 10px;
 }
-.nomargin {
+
+.navbar   {
     margin-left: 2.5px;
 }
-nav a:link {
-    text-decoration: none;
-    color:aqua;
-}
-nav a:visited {
-    color:aquamarine;
-}
-nav a:hover {
-    color:beige;
-}
-nav a:active {
-    color:blue;
-}
+footer   {
 
-footer {
     position: fixed;
     bottom: 7.5%;
     left: 0;
     right: 0;
     font-size: 22px;
     padding: 10px 0 10px 0;
-    background-color: aqua;
+    background-color: #A6D8DB;
 }
 
-footer small {
+footer small  {
+
     margin-left: 5px;
 }
 
 .conditions,
 .temp,
 .area {
-    background-color: azure;
+    background-color: rgba(200,200,200,.6);
     margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
+.temp,
+.area {
+    text-align: center;
+    padding: 5px 25px 5px 25px;
+}
+
+.conditions {
+    padding: 0 65px 0 65px;
+    margin-top: .8em;
+}
+
+.temp h1 {
+    margin-bottom: -1em;
+}
+
+
+.enlarge {
+    font-size: 40px;
+}
+
+.highlow {
+    float: right;
+}
+
+#wind span, #precip span  {
+    float: right;
+    text-align: right;
+}
+main  {
+    position: fixed;
+    top: 15%;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-image: url(../images/sunny-winter.jpg);
+    background-size: cover;
+    padding-bottom: 9em;
+}
