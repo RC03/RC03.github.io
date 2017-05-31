@@ -1,7 +1,4 @@
- {
-    box-sizing: border-box; /* changes width property
-    to total width instead of content width */
-}
+
 
 figure {
     display: block; /* just in case we have
@@ -16,17 +13,18 @@ body {
 }
 
  #localweather {
-    text-align:right;
-    margin-right: 10%;
-     margin-top: -6%;
+    display: flex;
+     justify-content: space-around;
+    margin-right: 33%;
+     margin-top: -1.6%;
 }
 #title {
     position: fixed;
     left: 0;
     right: 0;
     background-color: #A6D8DB;
-    margin-top: -5.7%;
-    padding-bottom: 0.5em;
+    margin-top: -.7%;
+    padding-bottom: .1em;
 }
 
 .navbar   {
@@ -72,9 +70,9 @@ footer small  {
 .temp,
 .area {
     background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
+    margin: .9em auto;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .temp,
@@ -82,7 +80,9 @@ footer small  {
     text-align: center;
     padding: 5px 25px 5px 25px;
 }
-
+.hourly {
+    visibility: hidden;
+}
 .conditions {
     padding: 0 65px 0 65px;
     margin-top: .8em;
@@ -115,6 +115,86 @@ main  {
     flex-flow: column nowrap;
     align-items: center;
     background-image: url(../images/sunny-winter.jpg);
-    background-size: cover;
+
     padding-bottom: 9em;
+}
+.overview img {
+    display: none;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 900px) { /* for desktop */
+    body {
+        flex-direction: row; }
+    .conditions{
+        display: flex;
+        height: 100%;
+        padding-bottom: 7em;
+        padding-top: .1em;
+        margin: 0;
+        width: 33%;
+        background: lightgreen;
+        margin-top: auto;
+        margin-bottom: auto;
+        order: -1;
+    }
+
+    .overview {width: 33%;}
+    .hourly {width: 33%;
+    visibility: visible;}
+    #localweather {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 66%;
+        margin-top: -1.6%;
+    }
+    .hourly ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navbar   {
+        position: fixed;
+        top: 7em;
+        left: 0;
+        right: 0;
+        background-color: #F07C6C;
+    }
+    .mainContent {
+        flex-flow: row;
+        width: 100%;
+    }
+    .hourly {
+        display: flex;
+        height: 100%;
+        padding-bottom: 7em;
+        padding-top: .1em;
+        margin: 0;
+        width: 33%;
+        background: lightgreen;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content:center;
+        }
+
+    main  {
+        position: fixed;
+        top: 23%;
+        bottom: 10%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        background-image: url(../images/sunny-winter.jpg);
+        background-size: cover;
+        padding-bottom: 9em;
+    }
+    .navbar ul {
+        justify-content: space-around;
+
+    }
 }
