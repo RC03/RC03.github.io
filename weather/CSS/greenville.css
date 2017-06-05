@@ -1,0 +1,129 @@
+figure {
+    display: block; /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+}
+body {
+    margin: 0;
+    /* remove any margin from body */
+    padding: 0;
+    /* ditto for padding */
+    background-color: salmon;
+    font-size: 20px;
+}
+@import url("https://fonts.googleapis.com/css?family=Sansita");
+
+#title {
+    position:fixed;
+    left: 0;
+    right: 0;
+    background-color: #A6D8DB;
+    font-family: Sansita;
+    margin-top: -.10%;
+    padding-bottom: .1em;
+}
+#titleTag {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: .9em;
+
+}
+#navBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F07C6C;
+    display: inline;
+}
+#navBar ul {
+
+    display: flex;
+    justify-content:space-between;
+    align-content: space-around;
+    padding: 0;
+    order: 0;
+    background-color: #f07C6C;
+    font-family: Sansita;
+    font-size: 1em;
+    text-decoration: none;
+}
+#navBar ul li {
+    display: inline-flex;
+}
+main {
+    display: flex;
+    background-image: url(../images/plan-images/afternoonStorm.jpg);
+    background-size: cover;
+    flex-direction: column;
+}
+#dailyWeather {
+
+    border: 2px solid;
+    color: black;
+    margin: 5%;
+    text-align: center;
+    margin-top: 14em; background-color: rgba(200, 200, 200, .6);
+    border-radius: 10px;
+}
+#conditions {
+    border: 2px solid;
+    color: black;
+    margin: 5%;
+    text-align: center;
+    margin-top: 1em;
+    background-color: rgba(200, 200, 200, .6);
+    border-radius: 10px;
+}
+
+
+#hourly {
+    visibility: hidden;
+}
+#footer {
+    position: fixed;
+    bottom: 7%;
+    left: 0;
+    right: 0;
+    background-color: #A6D8DB;
+    display: inline;
+
+}
+@media only screen and (min-width: 800px) { /* for desktop */
+
+    main {
+        display: flex;
+
+
+    }
+    #dailyWeather {
+
+        border: 2px solid;
+        color: black;
+        margin: 5%;
+        text-align: center;
+        margin-top: 14em; background-color: rgba(200, 200, 200, .6);
+        border-radius: 10px;
+    }
+    #conditions {
+        border: 2px solid;
+        color: black;
+        margin: 5%;
+        text-align: center;
+        margin-top: 1em;
+        background-color: rgba(200, 200, 200, .6);
+        border-radius: 10px;
+    }
+    #hourly {
+        display: flex;
+        visibility: visible;
+        border: 2px solid;
+        color: black;
+        margin: 5%;
+        text-align: center;
+        margin-top: 1em;
+        background-color: rgba(200, 200, 200, .6);
+        border-radius: 10px;
+        text-decoration: none;
+    }
