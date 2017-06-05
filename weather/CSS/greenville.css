@@ -92,38 +92,68 @@ main {
 }
 @media only screen and (min-width: 800px) { /* for desktop */
 
+    #titleTag {
+        display: flex;
+        justify-content: center;
+
+    }
+    #navBar {
+        position: fixed;
+        top: 11em;
+        bottom: 25em;
+        left: 0;
+        right: 0;
+        background-color: #F07C6C;
+    }
+    #navBar ul{
+        display: flex;
+        justify-content: space-between;
+    }
     main {
         display: flex;
+        flex-direction: row;
+        background-image: url(../images/plan-images/afternoonStorm.jpg);
+        background-size: cover;
+        padding: 8%;
+        left: 0;
+        right: 0;
 
-
+    }
+    #conditions {
+        border: 2px solid;
+        color: black;
+       width: 33%;
+        text-align: center;
+        margin-top: 14em;
+        margin-bottom: .4em;
+        background-color: rgba(200, 200, 200, .6);
+        border-radius: 10px;
+        order: 1;
     }
     #dailyWeather {
 
         border: 2px solid;
         color: black;
-        margin: 5%;
+        width: 33%;
         text-align: center;
-        margin-top: 14em; background-color: rgba(200, 200, 200, .6);
-        border-radius: 10px;
-    }
-    #conditions {
-        border: 2px solid;
-        color: black;
-        margin: 5%;
-        text-align: center;
-        margin-top: 1em;
+        margin-top: 14em;
+        margin-bottom: .4em;
         background-color: rgba(200, 200, 200, .6);
         border-radius: 10px;
+        order:2;
     }
     #hourly {
         display: flex;
         visibility: visible;
         border: 2px solid;
         color: black;
-        margin: 5%;
+        width:33%;
         text-align: center;
-        margin-top: 1em;
+        margin-top: 14em;
+        margin-bottom: .4em;
         background-color: rgba(200, 200, 200, .6);
         border-radius: 10px;
         text-decoration: none;
+        flex-direction: column;
+        order:3;
     }
