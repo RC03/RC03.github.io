@@ -12,11 +12,11 @@ body {
     background-color: salmon;
 }
 
- #localweather {
+#localweather {
     display: flex;
-     justify-content: space-around;
+    justify-content: space-around;
     margin-right: 33%;
-     margin-top: -1.6%;
+    margin-top: -1.6%;
 }
 #title {
     position: fixed;
@@ -144,7 +144,7 @@ main  {
 
     .overview {width: 33%;}
     .hourly {width: 33%;
-    visibility: visible;}
+        visibility: visible;}
     #localweather {
         display: flex;
         justify-content: space-around;
@@ -178,7 +178,7 @@ main  {
         margin-top: auto;
         margin-bottom: auto;
         justify-content:center;
-        }
+    }
 
     main  {
         position: fixed;
