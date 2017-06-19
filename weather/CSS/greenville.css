@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Sansita");
 figure {
     display: block; /* just in case we have
     any older browsers that don't recognize
@@ -11,7 +12,7 @@ body {
     background-color: salmon;
     font-size: 20px;
 }
-@import url("https://fonts.googleapis.com/css?family=Sansita");
+
 
 #title {
     position:fixed;
