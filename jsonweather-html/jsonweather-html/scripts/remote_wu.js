@@ -33,7 +33,7 @@ $(function () {
                 $("#add1").html(" Feels like  " + Math.round(parsed_json.current_observation.feelslike_f) + " &#8457");
                 $("#add2").text("Humidity:  " + parsed_json.current_observation.relative_humidity);
                 $("#add3").html("Wind from the " + parsed_json.current_observation.wind_dir + " at " + parsed_json.current_observation.wind_mph + " mph");
-                $("#")
+
                 $("#cover").fadeOut(250);
 
                 console.log(parsed_json);
