@@ -41,6 +41,8 @@ function getData(city, state){
             var location = parsed_json['location']['city'];
             var temp_f = parsed_json['current_observation']['temp_f'];
             $('#currentTemp').html(Math.round(temp_f) +  " &#8457" );
+
+            $("title").text(parsed_json.current_observation.display_location.full);
             $("#cityDisplay").text(parsed_json.current_observation.display_location.full);
             $("#summary").text(parsed_json.current_observation.weather);
             $("#add1").html(" Feels like  " + Math.round(parsed_json.current_observation.feelslike_f) + " &#8457");
