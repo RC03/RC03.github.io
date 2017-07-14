@@ -33,9 +33,9 @@ $("#searchResults").on("click", "a", function (evt) {
 
     document.getElementById('searchResults').style.display='none';
 });
-function getData(city, state){
+function getData(zmw){
     $.ajax({
-        url:"https://api.wunderground.com/api/92b3fba24d61b77b/geolookup/conditions/q/" + city + "," + state + ".json",
+        url:"https://api.wunderground.com/api/92b3fba24d61b77b/geolookup/conditions/q/" + zmw+ ".json",
         dataType : "jsonp",
         success : function(parsed_json) {
             var location = parsed_json['location']['city'];

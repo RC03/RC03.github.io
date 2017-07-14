@@ -1,0 +1,222 @@
+add import url ("https://fonts.googleapis.com/css?family=Roboto");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/site/background.jpg), no-repeat ;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    font-size:19px;
+
+}
+
+
+
+#images {
+    display: flex;
+    background-color: white;
+    background-position: center;
+    position: cover;
+    padding: 3em;
+    display: table;
+}
+
+
+
+
+#navigation {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li {
+    font-size: 12pt;
+    display:inline-flex;
+    flex-wrap: nowrap;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: ;
+    padding: 1em;
+    overflow: hidden;
+    background-color: red;
+}
+
+#navigation ul li a {
+    display: block;
+    color: white;
+    text-align:;
+    padding:  10px;
+    text-decoration: none;
+}
+
+#navigation ul li a:hover {
+    background-color: lightcoral;
+}
+
+
+#welcome {
+    display:flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+
+}
+
+
+
+/*
+#rockets{
+    display: flex;
+
+position: relative;
+    max-width: 100%;
+    height: auto;
+}
+#textwant{
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top:100px;
+    right:0;
+    max-width: 100%;
+    color:red;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+    background-color: rgba(220, 220, 220, .4);
+  margin: 0;
+    padding: 60px;
+    height: 40%
+???????????
+
+
+}
+*/
+
+#rockets {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url(/RC03.github.io/acme/acme/images/site/feature.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    height: auto;
+
+}
+
+#textwant {
+    color: #de2226;
+    display: flex;
+    flex-direction: column-reverse;
+
+    font-size: 16px;
+    padding: 1em;
+
+
+    margin: 0;
+    background-color: rgba(220, 220, 220, .6);
+    width: 40%;
+}
+
+#rockets img {
+    width: 100%;
+    height: auto;
+}
+
+.recipes {
+    /*    border: 1px solid #ccc;*/
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: px;
+
+}
+
+
+#desc :hover {
+    color: gray;
+}
+
+.recipes img {display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 35%;
+}
+
+.recipes div {
+    padding: ;
+    text-align: center;
+}
+
+#food {
+    overflow: hidden;
+    width: auto;
+    padding: 2em;
+}
+
+#review {
+/*
+    display: flex;
+    margin-left: 50%;
+    margin-top: -40%;
+*/
+    float: right;
+    margin-top: %
+}
+
+#pageTwo {
+    display: flex;
+    width:100%;
+}
+#img{
+    width: 100%;
+    height: auto;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+#information{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 15px;
+    padding-top: 15px;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+
+#manufac {
+    margin-top: 20px;
+}
+#review {
+    margin-bottom: 20px;
+
+}
+#info{
+    padding-bottom: 15px;
+}
+#price {
+    color: red;
+    font-weight: bolder;
+    font-size: 22px;
+    padding-top: 15px;
+
+}
+
+
+
+
+footer p {
+    text-align: center;
+    margin-bottom: -1em;
+}
+
+footer {border-top: solid black;
+margin-top: 1em;}
+
+
