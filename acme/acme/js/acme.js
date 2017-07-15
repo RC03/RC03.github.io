@@ -41,6 +41,7 @@ if (link!="Home") {
             console.log(data);
             var pictures=(data[link].path);
             console.log(data[link]);
+            $('title').replaceWith("<title>"+ link + ' | ACME' +"'</title>");
             $("#welcome").text(data[link].name);
             $('#img').html("<img src='" + pictures + "'>");
             $("#info").text(data[link].description);
@@ -52,6 +53,7 @@ if (link!="Home") {
     });
 }
 else{
+    $('title').replaceWith("<title>"+ 'ACME' +"'</title>");
     $('#mainpage').show();
     $('#pageTwo').hide();
     $('#welcome').text("Welcome to Acme!");
