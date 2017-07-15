@@ -7,7 +7,7 @@ body {
     background: url(../images/site/background.jpg), no-repeat ;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
-    max-width: 100%;
+   width: 80%;
     font-size:19px;
 
 }
@@ -291,7 +291,7 @@ margin-top: 1em;}
         */
         float: right;
         width: 50%;
-        padding: 2em;
+        padding: ;
     }
     #rockets img {
         width: 100%;
