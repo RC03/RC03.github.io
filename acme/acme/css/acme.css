@@ -188,12 +188,13 @@
             #row {
                 display: flex;
                 flex-flow: row-reverse;
+                justify-content: space-between
             }
             .recipes img {
                 display: flex;
                 flex-wrap: wrap;
                 width: ;
-                height: 50%;
+                height: 0%;
             }
             .recipes {
                 /*    border: 1px solid #ccc;*/
