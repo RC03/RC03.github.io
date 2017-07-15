@@ -193,13 +193,13 @@
             .recipes img {
                 display: flex;
                 flex-wrap: wrap;
-                width: 50%;
-                height: 35%;
+                width: ;
+                height: 50%;
             }
             .recipes {
                 /*    border: 1px solid #ccc;*/
                 display: inline-flex;
-                width: 170%;
+                width: 180%;
                 flex-wrap: wrap;
             }
             #review {
@@ -219,5 +219,24 @@
                 margin: 0;
                 background-color: rgba(220, 220, 220, .6);
                 width: 30%;
+            }
+            #information {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: flex-end;
+                font-size: 30px;
+            }
+
+            #manufac {
+                width: 100%;
+            }
+
+            #price {
+                display: flex;
+                color: #de2226;
+                font-weight: bolder;
+                font-size: 40px;
+                margin-bottom: 10px;
             }
 }
