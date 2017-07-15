@@ -8,10 +8,13 @@
             background: url(../images/site/background.jpg), no-repeat;
             background-size: cover;
             font-family: 'Roboto', sans-serif;
-            width: 90%;
+            width: 100%;
             font-size: 19px;
-        }
 
+        }
+#background {
+    background-color: #ffffff;
+}
 
         #images {
             display: flex;
@@ -19,7 +22,7 @@
             background-position: center;
             padding: 4em;
             display: table;
-            width: 100%
+            width: 90%
         }
 
         #navigation {
@@ -185,6 +188,15 @@
 
         @media only screen and (min-width: 900px) {
             /* for desktop */
+            body {
+                background: url(../images/site/background.jpg), no-repeat;
+                background-size: cover;
+                font-family: 'Roboto', sans-serif;
+                width: 100%;
+                font-size: 19px;
+                background-position:center;
+                margin: 3em;
+            }
             #row {
                 display: flex;
                 flex-flow: row-reverse;
