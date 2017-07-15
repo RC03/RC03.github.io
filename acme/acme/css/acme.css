@@ -1,312 +1,223 @@
-add import url ("https://fonts.googleapis.com/css?family=Roboto");
-* {
-    box-sizing: border-box;
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(../images/site/background.jpg), no-repeat;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            width: 80%;
+            font-size: 19px;
+        }
+
+        #background {
+            background-color: #ffffff;
+        }
+
+        #images {
+            display: flex;
+            background-color: #ffffff;
+            background-position: center;
+            padding: 3em;
+            display: table;
+        }
+
+        #navigation {
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav ul li {
+            font-size: 12pt;
+            display: inline-flex;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #navigation ul {
+            justify-content: space-around;
+            display: inline-flex;
+            flex-flow: nowrap;
+            width: 100%;
+            list-style-type: none;
+            padding: 1em;
+            overflow: hidden;
+            background-color: #de2226;
+        }
+
+        #navigation ul li a {
+            display: flex;
+            display: block;
+            color: #ffffff;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        #navigation ul li a:hover {
+            background-color: lightcoral;
+        }
+
+        #welcome {
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2em;
+        }
+
+        #rockets {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-start;
+            background-image: url(/RC03.github.io/acme/acme/images/site/feature.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: auto;
+        }
+
+        #textwant {
+            color: #de2226;
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 16px;
+            padding: 1em;
+            margin: 0;
+            background-color: rgba(220, 220, 220, .6);
+            width: 40%;
+        }
+
+        #rockets img {
+            width: 80%;
+            height: auto;
+        }
+
+        .recipes {
+            /*    border: 1px solid #ccc;*/
+            display: inline-flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+
+
+        .recipes img {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 30%;
+            background-color: #808080;
+            overflow: hidden;
+            width: auto;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        .recipes div {
+            text-align: center;
+        }
+
+        #food {
+            overflow: hidden;
+            width: auto;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        #review {
+            float: right;
+            width: 100%
+        }
+
+        #pageTwo {
+            display: flex;
+            width: 100%;
+        }
+
+        #img {
+            display: block;
+            width: 80%;
+            padding-bottom: 20px;
+        }
+
+        #img img {
+            width: 100%;
+            height: auto;
+            padding: 23px;
+            padding-top: 15px;
+        }
+
+        #information {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: flex-end;
+            font-size: 20px;
+        }
+
+        #manufac {
+            width: 100%;
+        }
+
+        #price {
+            display: flex;
+            color: #de2226;
+            font-weight: bolder;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #product {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer p {
+            text-align: center;
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+        footer {
+            border-top: solid black;
+            margin-top: 1em;
+        }
+
+        @media only screen and (min-width: 900px) {
+            /* for desktop */
+            #row {
+                display: flex;
+                flex-flow: row-reverse;
+            }
+            .recipes img {
+                display: flex;
+                flex-wrap: wrap;
+                width: 50%;
+                height: 35%;
+            }
+            .recipes {
+                /*    border: 1px solid #ccc;*/
+                display: inline-flex;
+                width: 170%;
+                flex-wrap: wrap;
+            }
+            #review {
+                float: right;
+                width: 50%;
+            }
+            #rockets img {
+                width: 100%;
+                height: auto;
+            }
+            #textwant {
+                color: #de2226;
+                display: flex;
+                flex-direction: column-reverse;
+                font-size: 16px;
+                padding: 1em;
+                margin: 0;
+                background-color: rgba(220, 220, 220, .6);
+                width: 30%;
+            }
 }
-
-body {
-    background: url(../images/site/background.jpg), no-repeat ;
-    background-size: cover;
-    font-family: 'Roboto', sans-serif;
-   width: 80%;
-    font-size:19px;
-
-}
-
-#background{
-    background-color: #ffffff;
-}
-
-#images {
-    display: flex;
-    background-color: #ffffff;
-    background-position: center;
-    position: cover;
-    padding: 3em;
-    display: table;
-}
-
-
-
-
-#navigation {
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-
-
-}
-
-nav ul li {
-    font-size: 12pt;
-    display:inline-flex;
-
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#navigation ul {
-    justify-content: space-around;
-    display: inline-flex;
-    flex-flow: nowrap;
-    width:100%;
-    list-style-type: none;
-    margin: ;
-    padding: 1em;
-    overflow: hidden;
-    background-color: #de2226;
-}
-
-#navigation ul li a {
-    display: flex;
-    display: block;
-    color: #ffffff;
-    text-align:;
-    padding:  10px;
-    text-decoration: none;
-}
-
-#navigation ul li a:hover {
-    background-color: lightcoral;
-}
-
-
-#welcome {
-    display:flex;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.em;
-
-}
-
-
-
-/*
-#rockets{
-    display: flex;
-
-position: relative;
-    max-width: 100%;
-    height: auto;
-}
-#textwant{
-    display: flex;
-    flex-direction: column-reverse;
-    position: absolute;
-    top:100px;
-    right:0;
-    max-width: 100%;
-    color:red;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: -1px;
-    background-color: rgba(220, 220, 220, .4);
-  margin: 0;
-    padding: 60px;
-    height: 40%
-???????????
-
-
-}
-*/
-
-#rockets {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    background-image: url(/RC03.github.io/acme/acme/images/site/feature.jpg);
-    background-repeat: no-repeat;
-    background-size:100%;
-    height: auto;
-
-}
-
-#textwant {
-    color: #de2226;
-    display: flex;
-    flex-direction: column-reverse;
-
-    font-size: 16px;
-    padding: 1em;
-
-
-    margin: 0;
-    background-color: rgba(220, 220, 220, .6);
-    width: 40%;
-}
-
-#rockets img {
-    width: 80%;
-    height: auto;
-}
-
-.recipes {
-    /*    border: 1px solid #ccc;*/
-    display: inline-flex;
-    width:100%;
-    flex-wrap: wrap;
-    padding: px;
-
-}
-
-
-#desc :hover {
-    color: gray;
-}
-
-.recipes img {display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    height: 35%;
-    background-color: #808080;
-
-}
-
-.recipes div {
-    padding: ;
-    text-align: center;
-}
-
-#food {
-    overflow: hidden;
-    width: auto;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-#review {
-/*
-    display: flex;
-    margin-left: 50%;
-    margin-top: -40%;
-*/
-    float: right;
-    width: 100%
-}
-
-#pageTwo {
-    display: flex;
-    width:100%;
-}
-#img{
-    display: block;
-   width: 80%;
-    padding-bottom: 20px;
-        padding-right:
-}
-#img img{
-    width: 100%;
-    height: auto;
-    padding: 23px;
-    padding-top: 15px;
-}
-
-#information{
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    justify-content:flex-end;
-    font-size: 20px;
-
-
-}
-
-
-#manufac {
-/*
-    margin-top: 10px;
-    font-size: 20px;
-    padding: 60px
-*/
-    width: 100%;
-}
-#reviews {
-/*
-    margin-bottom: 20px;
-    font-size: 20px;
-*/
-
-}
-#info{
-/*
-    padding-bottom: 15px;
-    font-size: 20px;
-    padding-left: 60px;
-    margin: 5px;
-*/
-
-}
-#price {
-    display: flex;
-
-    color: #de2226;
-    font-weight: bolder;
-    font-size: 20px;
-    margin-bottom: 10px;
-
-}
-#product{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-
-
-
-footer p {
-    text-align: center;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-footer {border-top: solid black;
-margin-top: 1em;}
-
-@media only screen and (min-width: 900px) { /* for desktop */
-
-    #row{
-        display: flex;
-        flex-flow: row-reverse;
-    }
-    .recipes img {display: flex;
-        flex-wrap: wrap;
-        width: 50%;
-        height: 35%;
-    }
-    .recipes {
-        /*    border: 1px solid #ccc;*/
-        display: inline-flex;
-        width: 170%;
-        flex-wrap: wrap;
-        padding: px;
-
-    }
-    #review {
-        /*
-        display: flex;
-        margin-left: 50%;
-        margin-top: -40%;
-        */
-        float: right;
-        width: 50%;
-        padding: ;
-    }
-    #rockets img {
-        width: 100%;
-        height: auto;
-    }
-    #textwant {
-        color: #de2226;
-        display: flex;
-        flex-direction: column-reverse;
-
-        font-size: 16px;
-        padding: 1em;
-
-
-        margin: 0;
-        background-color: rgba(220, 220, 220, .6);
-        width: 30%;
-    }
