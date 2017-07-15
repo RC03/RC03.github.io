@@ -1,26 +1,25 @@
 
         * {
             box-sizing: border-box;
+
         }
 
         body {
             background: url(../images/site/background.jpg), no-repeat;
             background-size: cover;
             font-family: 'Roboto', sans-serif;
-            width: 80%;
+            width: 90%;
             font-size: 19px;
         }
 
-        #background {
-            background-color: #ffffff;
-        }
 
         #images {
             display: flex;
             background-color: #ffffff;
             background-position: center;
-            padding: 3em;
+            padding: 4em;
             display: table;
+            width: 100%
         }
 
         #navigation {
@@ -80,10 +79,10 @@
             display: flex;
             flex-direction: column-reverse;
             font-size: 16px;
-            padding: 1em;
-            margin: 0;
+            padding: .5em;
+
             background-color: rgba(220, 220, 220, .6);
-            width: 40%;
+            width: 50%;
         }
 
         #rockets img {
@@ -218,7 +217,7 @@
                 padding: 1em;
                 margin: 0;
                 background-color: rgba(220, 220, 220, .6);
-                width: 30%;
+                width: 40%;
             }
             #information {
                 display: flex;
