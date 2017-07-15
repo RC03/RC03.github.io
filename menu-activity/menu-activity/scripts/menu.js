@@ -30,7 +30,7 @@ function getData(input) {
 
 //second pasted section of code
 // Intercept the menu link clicks
-$("#page-nav").on("click", "a", function (evt) {
+$("#navigation").on("click", "a", function (evt) {
     evt.preventDefault();
     // With the text value get the needed value from the weather.json file
     var jsonCity = $(this).text(); // Franklin, etc...

@@ -12,11 +12,13 @@ body {
 
 }
 
-
+#background{
+    background-color: #ffffff;
+}
 
 #images {
     display: flex;
-    background-color: white;
+    background-color: #ffffff;
     background-position: center;
     position: cover;
     padding: 3em;
@@ -29,25 +31,34 @@ body {
 #navigation {
     display: flex;
     font-family: 'Roboto', sans-serif;
+
+
 }
 
 nav ul li {
     font-size: 12pt;
     display:inline-flex;
-    flex-wrap: nowrap;
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #navigation ul {
+    justify-content: space-around;
+    display: inline-flex;
+    flex-flow: nowrap;
+    width:100%;
     list-style-type: none;
     margin: ;
     padding: 1em;
     overflow: hidden;
-    background-color: red;
+    background-color: #de2226;
 }
 
 #navigation ul li a {
+    display: flex;
     display: block;
-    color: white;
+    color: #ffffff;
     text-align:;
     padding:  10px;
     text-decoration: none;
@@ -61,7 +72,7 @@ nav ul li {
 #welcome {
     display:flex;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.em;
 
 }
 
@@ -122,14 +133,14 @@ position: relative;
 }
 
 #rockets img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 .recipes {
     /*    border: 1px solid #ccc;*/
     display: inline-flex;
-    width: 100%;
+    width:100%;
     flex-wrap: wrap;
     padding: px;
 
@@ -142,8 +153,10 @@ position: relative;
 
 .recipes img {display: flex;
     flex-wrap: wrap;
-    width: 40%;
+    width: 50%;
     height: 35%;
+    background-color: #808080;
+
 }
 
 .recipes div {
@@ -154,7 +167,8 @@ position: relative;
 #food {
     overflow: hidden;
     width: auto;
-    padding: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #review {
@@ -164,7 +178,7 @@ position: relative;
     margin-top: -40%;
 */
     float: right;
-    margin-top: %
+    width: 100%
 }
 
 #pageTwo {
@@ -172,39 +186,69 @@ position: relative;
     width:100%;
 }
 #img{
+    display: block;
+   width: 80%;
+    padding-bottom: 20px;
+        padding-right:
+}
+#img img{
     width: 100%;
     height: auto;
-    padding-right: 15px;
+    padding: 23px;
     padding-top: 15px;
 }
 
 #information{
+
     display: flex;
     flex-direction: column;
-    width: 50%;
-    font-size: 15px;
-    padding-top: 15px;
-}
-p {
-    padding: 0;
-    margin: 0;
+    width: 100%;
+
+    justify-content:flex-end;
+    font-size: 20px;
+
+
 }
 
+
 #manufac {
-    margin-top: 20px;
+/*
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 60px
+*/
+    width: 100%;
 }
-#review {
+#reviews {
+/*
     margin-bottom: 20px;
+    font-size: 20px;
+*/
 
 }
 #info{
+/*
     padding-bottom: 15px;
+    font-size: 20px;
+    padding-left: 60px;
+    margin: 5px;
+*/
+
 }
 #price {
-    color: red;
+    display: flex;
+
+    color: #de2226;
     font-weight: bolder;
-    font-size: 22px;
-    padding-top: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+#product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -213,10 +257,56 @@ p {
 
 footer p {
     text-align: center;
-    margin-bottom: -1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 footer {border-top: solid black;
 margin-top: 1em;}
 
+@media only screen and (min-width: 900px) { /* for desktop */
 
+    #row{
+        display: flex;
+        flex-flow: row-reverse;
+    }
+    .recipes img {display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 35%;
+    }
+    .recipes {
+        /*    border: 1px solid #ccc;*/
+        display: inline-flex;
+        width: 170%;
+        flex-wrap: wrap;
+        padding: px;
+
+    }
+    #review {
+        /*
+        display: flex;
+        margin-left: 50%;
+        margin-top: -40%;
+        */
+        float: right;
+        width: 50%;
+        padding: 2em;
+    }
+    #rockets img {
+        width: 100%;
+        height: auto;
+    }
+    #textwant {
+        color: #de2226;
+        display: flex;
+        flex-direction: column-reverse;
+
+        font-size: 16px;
+        padding: 1em;
+
+
+        margin: 0;
+        background-color: rgba(220, 220, 220, .6);
+        width: 30%;
+    }

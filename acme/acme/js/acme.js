@@ -1,26 +1,3 @@
-//$("#page-nav").ready(function () {
-//    getLinkName();
-////    $("#page-nav").ready(function () {
-////        getLinkName();
-//}
-//function getData(input) {
-//    // Get the data from the wunderground API
-//    $.ajax({
-//        url: "js/acme.json"
-//       , dataType: "jsonp"
-//        , success: function (data) {
-//            console.log(data);
-//
-//
-//
-//        $("#link1").text(data.Navigation.link1);
-//
-//
-//
-//        }
-//        });
-//}
-
 $(document).ready(function () {
     getData();
     $('').hide();
@@ -39,14 +16,14 @@ function getData() {
             $("#Explosives").html(data.Navigation.link3);
             $("#Decoys").html(data.Navigation.link4);
             $("#Traps").html(data.Navigation.link5);
-
+            console.log(Home);
         }
     });
 }
 
 //second pasted section of code
 // Intercept the menu link clicks
-$("#page-nav").on("click", "a", function (evt) {
+$("#navigation").on("click", "a", function (evt) {
     evt.preventDefault();
     // With the text value get the needed value from the weather.json file
     var link = $(this).text(); // Franklin, etc...
@@ -63,13 +40,14 @@ if (link!="Home") {
         success: function (data) {
             console.log(data);
             var pictures=(data[link].path);
-            console.log(data[pictures]);
-           $("#welcome").text(data[link].name);
-            $('img').html("<img src='" + pictures + "'>");
+            console.log(data[link]);
+            $("#welcome").text(data[link].name);
+            $('#img').html("<img src='" + pictures + "'>");
             $("#info").text(data[link].description);
-            $("#manufac").text("Made by:" + data[link].manufacturer);
-            $("#review").text("Reviews: " + data[link].reviews + "/5 stars");
-            $("#price").text('Price: $' + data[link].price);
+            $("#manufac").html("<strong>Made by:</strong>" + data[link].manufacturer);
+            $("#reviews").html("<strong>Reviews:</strong> " + data[link].reviews + "/5 stars");
+            $("#price").html("<strong>Price: $</strong> " + data[link].price);
+            console.log(data[link].reviews);
         }
     });
 }
