@@ -41,7 +41,7 @@ if (link!="Home") {
             console.log(data);
             var pictures=(data[link].path);
             console.log(data[link]);
-            $('title').replaceWith("<title>"+ link + ' | ACME' +"'</title>");
+            $('title').replaceWith("<title>"+ link + ' | ACME' +"</title>");
             $("#welcome").text(data[link].name);
             $('#img').html("<img src='" + pictures + "'>");
             $("#info").text(data[link].description);
